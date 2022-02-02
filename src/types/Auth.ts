@@ -1,1 +1,1 @@
-export type AuthType = 'authtoken' | 'password';
+export type AuthType = 'authtoken' | 'password' | 'auth';
