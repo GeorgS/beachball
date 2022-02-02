@@ -35,9 +35,9 @@ export function getNpmAuthArgs(registry: string, token?: string, authType?: Auth
   const authArgs: string[] = [];
 
   if (token) {
-    let npmKeyword = '_authToken'
-    if (authType === 'password') npmKeyword = '_password'
-    if (authType === 'auth') npmKeyword = '_auth'
+    let npmKeyword = '_authToken';
+    if (authType === 'password') npmKeyword = '_password';
+    if (authType === 'auth') npmKeyword = '_auth';
 
     const shorthand = registry.substring(registry.indexOf('//'));
     authArgs.push(`--${shorthand}:${npmKeyword}=${token}`);
